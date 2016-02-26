@@ -1,30 +1,33 @@
 
 public class HiddenWord {
-	
-	 public static String word;
-	
+
+	private static String word;
+
 	public static void main(String[] args) {
-		HiddenWord hidden = newh HiddenWord("HELLO");
-		System.out.println(hidden.getHint(HALLO);
+		HiddenWord hidden = new HiddenWord("HELLO");//the correct word
+		System.out.println(HiddenWord.getHint("OLLEH")); //the incorrect word
 	}
-	
+
 	public static String getHint(String input){
-		String temp="";
+		String temp=""; //initialize
 		for(int i=0;i<word.length();i++){
-			String letter= input.substring(i,i+1);
-			if(word.substring(i,i+1).equals(letter)){
-				temp+=letter;
+			String letter= input.substring(i,i+1);// ex. 1 = H 1+1 = E
+			if(word.substring(i,i+1).equals(letter)){ 
+				temp+=letter;// if the letter is correct it puts it in a temporary 
+				//array then it loops again
 			}else{
 				if(word.indexOf(letter)>=0){
-					temp+="+";
+					temp+="+";//correct letter but wrong placement
 				}else{
-					temp+="*";
+					temp+="*";// wrong letter
 				}
 			}
+
+		}
 		return temp;
-		
 	}
-	
+
 	public HiddenWord(String word){
-		this.word = word;
+		this.word = word; //constructor
 	}
+}
