@@ -1,24 +1,24 @@
 
 public class Recursion6point3 {
 
-	public static void main(String[] args) {
-		String string = "Carmen";
-		System.out.println("Original String: " + string);
-		System.out.println("Reversed String: " + recursiveMethod(string));
-
-	}
+//	public static void main(String[] args) {
+//		mystery("HANYNAH");
+//
+//	}
 	
-	public static String recursiveMethod(String string){
-	 if(string.length()== 1)
-	 {
-	  return string;
-	 }
-	 else
-	 {
-		 return recursiveMethod(string.substring(1)) + string.charAt(0);
-	 }
-	 
-	}
-	
-	
+//	public static void mystery(String s){
+//		if (s.length() <= 1){
+//			System.out.println(s);
+//			}
+//		else {
+//			if (s.substring(0,1).equals(s.substring(s.length()-1,   s.length()))){
+//				System.out.println(s);
+//				mystery(s.substring(2,s.length()-2));
+//			}
+//		}
+//	}
+//
+//	
+//	
+//}
 }

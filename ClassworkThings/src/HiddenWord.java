@@ -3,10 +3,10 @@ public class HiddenWord {
 
 	private static String word;
 
-	public static void main(String[] args) {
-		HiddenWord hidden = new HiddenWord("HELLO");//the correct word
-		System.out.println(HiddenWord.getHint("OLLEH")); //the incorrect word
-	}
+//	public static void main(String[] args) {
+//		HiddenWord hidden = new HiddenWord("HELLO");//the correct word
+//		System.out.println(HiddenWord.getHint("OLLEH")); //the incorrect word
+//	}
 
 	public static String getHint(String input){
 		String temp=""; //initialize
