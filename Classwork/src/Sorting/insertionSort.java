@@ -16,7 +16,7 @@ public class insertionSort {
 //	}
 	
 	public static void sort(int[] array) {
-		for(int i = 1; i < array.length; i++){
+		for(int i = 0; i < array.length; i++){
 			int num = array[i];
 			int j = i;
 			while( j > 0 && array[j-1] > num){
